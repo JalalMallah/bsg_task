@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #0044ff;
+  color: #fff;
+  text-align: center;
+
+  h2 {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 3rem 4rem;
+  
+    h2 {
+      margin: 0 0 4rem;
+      font-size: 4rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .container {
+    padding: 3rem 6rem;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+  }
+
+  
+}

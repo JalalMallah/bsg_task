@@ -1,0 +1,44 @@
+.itemContainer {
+  margin: 0 0 2rem;
+
+  h3 {
+    margin: 0 0 .2rem;
+    font-size: 1.8rem;
+  }
+}
+
+.imageContainer {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 320px;
+  height: 180px;
+  
+  img {
+    display: block;
+    max-width: 100%;
+    cursor: pointer;
+    transition: transform .2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .itemContainer {
+    margin: 0 0 3rem;
+  
+    h3 {
+      margin: 0 0 .5rem;
+      font-size: 2.5rem;
+    }
+  }
+
+  .imageContainer {
+    width: 640px;
+    height: 360px;
+  }
+  
+}
+

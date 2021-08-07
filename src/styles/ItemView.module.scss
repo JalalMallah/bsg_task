@@ -1,0 +1,55 @@
+.itemTitle {
+  margin: 0 0 2rem;
+  font-size: 2rem;
+}
+
+.description {
+  margin: 0 0 2rem;
+  text-align: justify;
+  text-align-last: center;
+}
+
+.videoPlayer {
+  margin: 0 0 2rem;
+  width: 320px;
+  height: 180px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: #fb0;
+    font-family: var(--text-font);
+    font-size: 1.6rem;
+    font-weight: bold;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.98);
+    }
+}
+
+@media (min-width: 768px) {
+  
+  .itemTitle {
+    margin: 0 0 3rem;
+    font-size: 3rem;
+  }
+
+  .description {
+    width: 640px;
+    margin: 0 auto 3rem;
+    font-size: 2rem;
+  }
+  
+  .videoPlayer {
+    margin: 0 0 3rem;
+    width: 640px;
+    height: 360px;
+  }
+}

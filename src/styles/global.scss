@@ -1,0 +1,17 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --text-font: 'Poppins', sans-serif;
+  font-family: var(--text-font);
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0044ff;
+  color: #fff;
+  font-size: 1.6rem;
+}

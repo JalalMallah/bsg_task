@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+
+import SplashScreen from './views/SplashScreen';
+import ListView from './views/ListView';
+
+import './styles/global.scss';
 
 function App() {
+
+  const [token, setToken] = useState<string>('');
+
+  const logUserIn = (token: string) => {
+    setToken(token);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {token ? <ListView token={token} /> : <SplashScreen logUserIn={logUserIn} />}
     </div>
   );
 }
