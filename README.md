@@ -1,12 +1,13 @@
 # BSG Recruitment Task
 
-> This is an OTT web application containing video content with the option of playback.
+> This is an OTT web application containing video content with the option of playback. In order to login and test the application you have to provide the username: 'anonymous' and the password: '0000'. After login, the main screen will load containg a list of video content. Clicking on the cover of any of the items will render a separate view for the selected item.
 
 ### Tech Stack
 
 - React
 - TypeScript
 - CSS Modules
+- Dash.js Player
 
 ---
 
